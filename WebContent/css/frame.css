@@ -1,0 +1,176 @@
+html{font-family: "SpoqaHanSans", "Noto Sans SC", "APPLE SD Gothic NEO", "sans-serif";
+    word-wrap: break-word;}
+body{position: relative; display: block; min-width: 1440px; margin: 0 auto; font-size: 100%;
+    line-height: 100%; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; word-break: keep-all;}
+    
+ol, ul, ul li {list-style: none;}
+:lang(ko) {font-family: "Apple SD Gothic Neo", AppleSDGothicNeo, "Malgun Gothic", "맑은 고딕", sans-serif;}
+    
+a{text-decoration:none;}
+				 
+/*header*/		
+.header_title img{position:absolute; top:0; left:-180px; height:60px;}		 
+#innerHead{    width: 1440px;
+    height: 67px;
+    margin: 0px auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 11px rgba(0,0,0,0.1);
+    z-index: 1100;
+    background: white;
+    border-bottom: solid 1px #e2e2e2;}
+.headerWrapper{height: 40px; width: 1080px; margin: -12px auto; position: relative;}
+
+/*header search*/
+.search__SearchBlock{position: absolute; left: 1%; top: 1%; width: 554px; height: 45px;}
+.search__SearchBlock #searchFood{
+	top:-12%;
+	left:-5%;
+    position: absolute;
+    width: 650px;
+    margin-left: 32px;
+    height: 18px;
+    font-size: 19px;
+    line-height: 1.17;
+    padding: 14px 0px;
+    border-width: 0px;
+    border-style: none;
+    border-color: inherit;
+    border-image: initial;
+    outline: none;
+    /* z-index: -1; */
+}
+#searchIcon{position:absolute; display: block; margin:8px 0 0 6px; width: 30px; height: 30px; background-image: url(../images/images.png);
+			background-size: 30px 30px;	background-repeat:no-repeat; left:-8%; top:9%;}
+li #searchIcon{
+	position:absolute;
+	top:14%;
+	left:1%;
+    display: block;
+    margin:8px 0 0 6px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/images.png);
+    background-size: 15px 15px;
+    background-repeat:no-repeat;
+}
+ul#search_AutoSearch{border:1px solid #ccc; left:0%; top: 138%; background-color: white; min-width:145%; position: absolute;  padding:0; margin:0;}
+ul#search_AutoSearch li{position:relative; padding:12px 30px 0 30px; list-style:none; cursor:pointer;}
+ul#search_AutoSearch li.sel{ background:#ccc; color:white; margin: 0; }
+span.srchval{color:red;}
+
+
+.hide{display: none;}
+
+
+
+/*실시간 검색어*/
+
+.blind{position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px;}
+	 
+/*section*/
+
+/*영균*/
+/* .imgbox{ */
+/* 	padding:0px; */
+/* 	position:relative; */
+/* 	width:280px; */
+/* } */
+.food_name{font-size:17px; font-weight:bold; display:inline-block; margin-top:10px; padding-right:12px; position:absolute; right:10px; top:-2px;}
+.food_grade{font-size:16px; color:orange; display:inline-block; position:absolute; right:10px; top:9px;}
+.food_location{font-size:12px; padding-top:10px;  color:gray;display:inline-block; position:absolute; right:10px; top:30px;}
+.food_type{padding-bottom:21px;font-size:14px;display:inline-block;  padding-top:20px;color:gray; position:absolute; right:10px; top:40px;}
+				
+				
+/*tab_menu*/
+.click_SearchButton{
+ position: absolute;
+    top: 15px;
+    left: 746px;}
+.headerWrapper .tab_menu div:last-of-type{padding:0 30px;}
+.tab_menu .recent_login{padding-left:0px;width:30px; height:35px; margin-top:-10px; margin-right:-4px; cursor:pointer;}
+.headerWrapper .tab_menu{ position:absolute; top:-57%; right:-15.5%;}
+.headerWrapper .tab_menu div{height:70px;float:left; top:0%; right:5%; border-left:1px solid #ccc; 
+							padding:0 15px; box-shadow: 0 4px 11px rgba(0,0,0,0.1)}
+.headerWrapper .tab_menu li{position:relative; top:40%; right:-1%;}
+.headerWrapper .tab_menu li a {margin-top:10%;font-size:18px; text-decoration:none; color:gray;}
+
+
+/*최근본 맛집*/
+.recent_food{position: absolute;margin: 55px -181px 0 0; height:578px;float: right;background:white;width: 282px;display:inline;
+			 border-radius: 3px; padding: 10px; border:2px solid orange; z-index:1000; top:0%; right:2%;}
+.recent_foodimg{width:80px; height:80px;}
+.recent_triangle{
+	z-index: 1000;
+	position: absolute;
+	top: -3.5%;
+	right: 7%;
+	width: 0px;
+	height: 0px;
+	border-bottom: 20px solid orange;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+
+}
+.recent_food ul{ margin:0 auto; padding:0 13px; }
+.recent_food ul li{ margin-bottom: 0px; }
+.recent_food ul li a{float: left;padding:7px 16px 10px 32px;  font-size: 17px; color: dimgray;  display:inline-block; position:relative;}
+.recent_food ul li ul{position: absolute; left: 0; top: 40px; height:600px;width:260px;  border: 0; padding:15px; }
+.recent_food ul li ul a img{display:inline-block;}
+.recent_food ul li ul a li{
+    width: 218px;
+    display: inline-block;
+ }
+.recent_food ul li ul a li .recent_foodimg{ border:0;;padding-bottom:3px; display:inline-block;}
+/* .recent_food ul li ul a li .food_name{font-size:17px; font-weight:bold; display:inline-block; margin-top:10px; padding-right:12px; } */
+/* .recent_food ul li ul a li .food_grade{font-size:16px; color:orange; display:inline-block; } */
+/* .recent_food ul li ul a li .food_location{font-size:14px; padding-top:10px;  color:gray;display:inline-block; } */
+/* .recent_food ul li ul a li .food_type{padding-bottom:21px;font-size:14px;display:inline-block;  padding-top:10px;color:gray; } */
+
+.recent_food ul li.active a{color: black; border-bottom:3px solid orange; }
+
+.recent_food ul li ul li .recent_starimg{margin:0 34px; width:200px;}
+.recent_food ul li ul li .wishtext{font-size:25px; padding-left:10px; font-weight:bold; margin:35px 29px;}
+.recent_food ul li ul li .wishtext2{color:orange; margin:24px 10px; text-align:center;}
+
+
+.recentBottom{position:relative; top:95%; right:0%; text-align:center; border-top:1px solid #ccc;
+				width:100%; }
+.recentBottom .logoutbutton{position:absolute; padding-top:10px; right:39%; font-size:25px; color:orange}
+
+/*headerImg*/
+.ImgPosition{width:1440px;  margin:0 auto;}
+.headerImg img{width:1440px;}
+.headerImg button.slick-prev.slick-arrow{visibility:hidden;}
+.headerImg button.slick-next.slick-arrow{visibility:hidden;}
+
+.recent_login:active{
+	box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px, rgba(0,0,0,0.5) 2px 2px 3px 3px;
+	z-index : 100;
+}
+
+.bodyStart{
+	width:1440px; margin:0 auto; position:relative; clear:both; padding-top:80px; padding-bottom:40px;
+}
+
+
+/*footer*/
+#footer{ width:1440px; display: block; background-color: #2e2e2e; position: relative; text-align: left; height: 300px;
+		margin:0 auto; clear:both;}
+#footer .inner__Copy{ margin: 0 auto; max-width: 1200px;}
+.copyrights small{display: block; color: #fff; font-size: 0.875rem;line-height: 22px;}
+.copyright{ display: inline-block; padding-top: 40px; font-weight: bold; line-height: 13px; vertical-align: top;}
+footer .txt_copy {color: rgba(255, 255, 255, 0.7); display: block; font-weight: 500; font-size: 12px;
+				 line-height: 18px;}
+.screen_out{overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+.info_service{ padding: 28px 0 34px; }
+.link_service{display: inline-block; font-size: 16px; line-height: 19px; color: #fff;
+				/* color: rgba(255, 255, 255, 0.7); */ vertical-align: top; font-weight: bold; }
+.link_service2{position: relative; margin-left: 10px; padding-left: 22px;}
+		
+.recent_food{overflow:hidden;}
+
+.recent_food ul li ul a.imgbox{padding-left:0px; border-bottom:1px solid #ccc; width:257px;}
+
