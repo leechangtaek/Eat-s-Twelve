@@ -35,5 +35,5 @@
 <ol><img src="/md_img/board20.png"/></ol>
 <ol><img src="/md_img/board21.png"/></ol>
 <ol><img src="/md_img/board22.png"/></ol>
-<ol><img src="/md_img/board23.png"/></ol>
+<img width="1605" alt="board23" src="https://user-images.githubusercontent.com/59005174/82291782-92a37300-99e4-11ea-9869-7cbf099f0ce8.png">
 
